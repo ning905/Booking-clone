@@ -1,4 +1,4 @@
-import "./list.css"
+import "./hotelList.css"
 import Header from "../../components/header/Header"
 import Navbar from "../../components/navbar/Navbar"
 import { useLocation } from "react-router-dom"
@@ -7,7 +7,7 @@ import { format } from "date-fns"
 import { DateRange } from "react-date-range"
 import SearchItem from "../../components/searchItem/SearchItem"
 
-export default function List() {
+export default function HotelList() {
 	const location = useLocation()
 	const [destination, setDestination] = useState(location.state.destination)
 	const [date, setDate] = useState(location.state.date)
