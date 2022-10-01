@@ -129,7 +129,7 @@ export default function Header({ type }) {
 									className="header-search-text"
 									onClick={() => setOpenOptions((o) => !o)}
 								>
-									{`${options.adult} adult · ${options.adult} children · ${options.room} room`}
+									{`${options.adult} adult · ${options.children} children · ${options.room} room`}
 								</span>
 								{openOptions && (
 									<ul className="options">
