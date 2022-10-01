@@ -88,9 +88,11 @@
 .date {
 	position: absolute;
 	top: 50px;
+	z-index: 2;
 }
 
 .options {
+	z-index: 2;
 	list-style-type: none;
 	padding: 0;
 	position: absolute;
