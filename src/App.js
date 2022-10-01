@@ -1,17 +1,16 @@
-import { Route, Routes } from "react-router-dom";
-import Home from "./pages/home/Home";
-import Hotel from "./pages/hotel/Hotel";
-import List from "./pages/list/List";
+import { Route, Routes } from "react-router-dom"
+import Home from "./pages/home/Home"
+import Hotel from "./pages/hotel/Hotel"
+import HotelList from "./pages/hotelList/HotelList"
 
 function App() {
-  return (
-    <Routes>
-      <Route path="/"  element={<Home />} />
-      <Route path="/hotels"  element={<List />} />
-      <Route path="/hotels/:id"  element={<Hotel />} />
-
-    </Routes>
-  );
+	return (
+		<Routes>
+			<Route path="/" element={<Home />} />
+			<Route path="/hotels" element={<HotelList />} />
+			<Route path="/hotels/:id" element={<Hotel />} />
+		</Routes>
+	)
 }
 
-export default App;
+export default App
